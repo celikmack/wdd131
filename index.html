@@ -3,9 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <meta name="description" content="WDD131 - Dynamic Web Fundamentals - Celi Macêdo's first website for the course.">
+    <meta name="author" content="Celi Macêdo">
+    <title>WDD131 - Dynamic Web Fundamentals - Celi Macêdo</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 <body>
-    <h1>Celi Macêdo - WDD 131 </h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="https://linkedin.com" title="linkedIn">LinkedIn</a></li>
+            <li><a href="https://byupw.instructure.com/" title="canvas">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/98?lang=eng&id=p2#p2" title="scripture">Scripture</a></li>
+            <li><a href="#" title="final project">Final Project</a></li>
+
+        </ul>
+    </nav>
+
+    <h1>Celi Macêdo de São José</h1>
+    
+    <main>
+
+        
+        
+        <section class="card-left">
+            <h2>About Me </h2>
+            <div class="hero">
+                <p>Hello, my name is Celi Macêdo. I am from Salvador, Bahia, Brazil. I like to hear good
+                music, my favorite artist is Tears for Fears. I love seafood and baiana cuisine.
+                "Vatapá" and "carurú" are on my list of the 10 best food. I enjoy scuba diving and
+                outdoor activities, such as visiting isles, mountains, and forests. I am a member
+                of
+                The Church of Jesus Christ of the Latter-days Saints. I've served a full-time
+                mission in
+                the Brazil Belo Horizonte East mission, and now I serve as a temple worker in the
+                Salvador Brazil temple.</p>
+                <img src="images/profile.jpg" alt="Image of Celi MacÊdo" width="250">
+            </div>
+            
+            <h2 id="brazil">Brazil</h2>
+
+            <div class="flag">
+                <img src="images/br.gif" alt="Brazilian flag">
+                <p>I was born  and live in Brazil, one of the larggest countries in the world. I live in Bahia, located in the northeast. We are famous for our music, cuisine and tourism.</p>
+            </div>
+        </section>    
+        
+        <section class="card-right">
+            <h2>Web Dev Resources </h2>
+            <ul class="resources">
+                <li><a href="https://www.youtube.com/@BroCodez" target="_blank" title="Bro Code">Bro Code</a></li>
+                <li><a href="https://www.youtube.com/watch?v=JYfiaSKeYhE&t=99s" target="_blank" title="Coding 2go">Codin2GO</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/" target="_blank" title="MDN">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank" title="W3 Schools">W3 Schools</a></li>
+                <li><a href="https://www.youtube.com/@GiraffeAcademy" target="_blank" title="Giraffe Academy">Giraffe Academy</a></li>
+                <li><a href="https://www.youtube.com/watch?v=yE9DLIoDwCg&t=8s" target="_blank" title="Responsive Nav Bar">Responsive Navbar - HTML & CSS</a></li>
+            </ul>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer">
+            <p>© <span id="currentYear"></span>  🪸 Celi Macêdo 🪸 Brazil</p>
+        </div>
+        <div class="modified">
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
 </body>
 </html>
