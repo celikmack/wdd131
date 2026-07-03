@@ -9,12 +9,13 @@ const lastModified = document.getElementById("lastModified")
 
 lastModified.innerHTML = `Last Modification: ${document.lastModified}`
  
-// Hamburger Menu
-const mainnav = document.querySelector('.navbar')
-const hambutton = document.querySelector('#menu');
+// Hamburger Menu and Navigation
+const hambutton = document.querySelector('#ham-btn');
+const navLinks = document.querySelector('#navbar')
+
 
 hambutton.addEventListener('click', () => {
-	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');
+  navLinks.classList.toggle('show');
 });
 
