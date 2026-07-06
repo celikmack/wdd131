@@ -21,7 +21,6 @@
         overflow: visible;
     }
     .navigation a {
-        margin: 0;
         padding: 1rem 2rem;
         opacity: 1;
         transform: none;
@@ -32,7 +31,6 @@
     }
 
     /* Main */
-
     .figure {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
