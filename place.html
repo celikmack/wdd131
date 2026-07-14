@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazil - Place</title>
+    <meta name="description" content="A responsive web page about tha country I live in. Highlighting Pelé, who is a Brazil's symbol.">
+    <meta name="author" content="Celi Macêdo">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Geomini:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playpen+Sans+Hebrew:wght@100..800&family=Rajdhani:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="flag">
+            <div class="diamond"></div>
+                <h1>Brazil</h1>
+        </div>
+        
+    </header>
+
+    <main>
+        
+        <picture>
+            <source srcset="images/hero-large.webp" media="(min-width: 1000px)">
+            <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
+            <img src="images/hero-small.webp" alt="Pelé - The King of Football. Photo by: famosandonamidia.blogspot.com" width="500" height="250">
+        </picture>
+        
+        
+        <div class="data">
+            <div class="data-country">
+                
+                <h2>Data</h2>
+                <div class="data-item">
+                    <span class="label">Area:</span><span class="value">8,510,346 km²</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Population:</span><span class="value">213.5 million</span> 
+                </div>
+                <div class="data-item">
+                    <span class="label">Capital:</span><span class="value">Brasília</span> 
+                </div>
+                <div class="data-item">
+                    <span class="label">Language:</span><span class="value">Portuguese</span> 
+                </div>
+                <div class="data-item">
+                    <span class="label">Currency</span><span class="value"> Real</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Time Zone:</span><span class="value">UTC +3</span> 
+                </div>
+                <div class="data-item">
+                    <span class="label">Calling Code:</span><span class="value">+ 55</span> 
+                </div>
+                <div class="data-item">
+                    <span class="label">Internet TDL:</span><span class="value">.br</span> 
+                </div>
+            </div>    
+            </div>
+        
+            <div class="data-weather">
+                <h2>Weather</h2> 
+                <div class="weather-icon">
+                <img src="images/cloud-rain-fill.svg" alt="Light Rain">
+                </div>
+                
+                <div class="data-item">
+                    <span class="label">Temperature:</span><span class="value">27°C</span>  
+                </div>
+                <div class="data-item">
+                    <span class="label">Conditions:</span><span class="value">Light rain </span> 
+                </div>
+                <div class="data-item">
+                    <span id="wind-speed" class="value"></span>   
+                </div>
+                <div class="data-item">
+                    <span class="label">Wind Chill:</span><span id="windChill" class="value"></span>
+                </div>
+                   
+            </div>
+        </div>    
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>© <span id="currentYear"></span>  🪸 Celi Macêdo 🪸 Brazil</p>
+        </div>
+        <div class="modified">
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

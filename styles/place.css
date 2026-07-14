@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: "Geomini";
+    --color1: #008000;
+    --color2: #000080;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: var(--color1);
+}
+
+.flag {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.diamond {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 150px;
+  background-color: yellow;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}  
+
+h1 {
+    position: absolute;
+    background-color: blue ;
+    width: 110px;
+    height: 110px;
+    color: #fff;
+    margin: 30px;
+    left: 44%;
+    top: 35%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}    
+
+body {
+    background: none;
+    font-family: var(--font);
+}
+
+picture img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--color1);
+    border-radius: 8px;
+}
+
+.data-country, .data-weather {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #f6f6e2;
+    border: 2px solid var(--color1);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: var(--color1);
+    color: #fff;
+    
+}
+
+.data-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+
+.label {
+    margin-left: 8.5rem;
+    color: var(--color2);
+    font-weight: 700;
+    
+}
+
+.value {
+    color: var(--color2);
+    
+}
+
+.weather-icon img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: var(--color1);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: .8rem;
+}
+
+.footer {
+    padding: 2px;
+    margin-bottom: 1rem;
+}
+
+.modified {
+    color: yellow;
+    font-size: .9rem;  
+}
+
+
+
