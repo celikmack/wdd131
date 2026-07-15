@@ -1,4 +1,4 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 820px) {
     header, main, footer {
         max-width: 1920px;
         margin: 0 auto;
@@ -34,7 +34,7 @@
         
     }
     .data-weather {
-        width: 20rem;
+        width: 25rem;
         top: 65%;
         right: 5%; 
     }

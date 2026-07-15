@@ -1,15 +1,14 @@
-let temperature = 27;
-let windSpeed = 16;
 
-let windchill = calculateWindChill(temperature, windSpeed);
-document.getElementById("windChill").textContent = windchill;
+let temperature = 24;
+let windSpeed = 20;
 
+function calculateWindChill(temp, speed) { return (13.12 + 0.6215 * temp - 11.37 * Math.pow(speed, 0.16) + 0.3965 * temp * Math.pow(speed, 0.16)).toFixed(1);}
 
-function calculateWindChill(temperature, windSpeed) {
-    if (temperature > 50 || windSpeed <= 3) {
-        return "N/A";
-    } 
-                        
-    const windchill = 35.74 + (0.6215 * temperature) - (35.75 * Math.pow(windSpeed, 0.16))
-    return windchill.toFixed(1);
-} 
+const windChill = document.getElementById('wind-chill');
+if (windChill) {
+    if (temperature <= 10 && windSpeed > 4.8) {
+        windChill.textContent = `${calculateWindChill(temperature, windSpeed)} ℃`;
+    } else {
+        windChill.textContent = 'N/A';
+    }
+}

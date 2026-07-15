@@ -99,6 +99,10 @@ h2 {
     
 }
 
+.highlight, #wind-chill {
+    color: var(--color1);
+}
+
 .weather-icon img {
     width: 50px;
     height: auto;
