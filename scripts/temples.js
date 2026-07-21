@@ -71,12 +71,12 @@ const temples = [
     "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
   },
   {
-    templeName: "Rio de Janeiro Brazil",
-    location: "Rio de JAneiro, Brazil",
-    dedicated: "2022, May, 8",
-    area: 29966,
+    templeName: "Salvador Brazil",
+    location: "Salvador, Bahia, Brazil",
+    dedicated: "2024, October, 20",
+    area: 29963,
     imageUrl:
-    "https://www.churchofjesuschrist.org/imgs/001db7326e638032470a02813c9e47191ef74b0e/full/640%2C/0/default"
+    "https://www.churchofjesuschrist.org/imgs/pzbgoqroqro0q90zz9w6nft8cmopyu0edvuj0j1g/full/!1200,/0/default"
   },
   {
     templeName: "Kirtland",
@@ -84,7 +84,7 @@ const temples = [
     dedicated: "1836, March, 27",
     area: 15000,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/kirtland-temple/kirtland-temple-1275-main.jpg"
+    "https://www.churchofjesuschrist.org/imgs/27bfba650440ac09cd863ae4cb222d5c1ab227ca/full/!1200,/0/default"
   },  
   {
     templeName: "Sapporo Japan",
@@ -92,7 +92,7 @@ const temples = [
     dedicated: "2016, August, 21",
     area: 48480,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3374-main.jpg"
+    "https://www.churchofjesuschrist.org/imgs/9a282c4e3d1c1beac18fbc313ec5f40b5ce34722/full/!1200,/0/default"
   },
   {
     templeName: "Logan Utah",
@@ -100,23 +100,23 @@ const temples = [
     dedicated: "1884, May, 19",
     area: 119619,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/logan-utah-temple/logan-utah-temple-40550-main.jpg"
+    "https://www.churchofjesuschrist.org/imgs/43b4d1fc7fabb818f10b6e092a3b58e1984f8e96/full/!1200,/0/default"
   },
   {
-    templeName: "Cobán Guatemala",
-    location: "Cobán, Guatemala",
-    dedicated: "2024, June, 9",
+    templeName: "Brasília, Brazil",
+    location: "Brasília, DF, Brazil",
+    dedicated: "2023, September, 17",
     area: 8772,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/coban-guatemala-temple/coban-guatemala-temple-46348-main.jpg"
+    "https://www.churchofjesuschrist.org/imgs/95f3f3abdd4811ed920ceeeeac1e15db91037802/full/!1200,/0/default"
   },
   {
     templeName: "St. George Utah",
     location: "St. George, Utah, United States",
-    dedicated: "21887, April, 8",
+    dedicated: "1887, April, 8",
     area: 143969,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-main.jpg"
+    "https://www.churchofjesuschrist.org/imgs/e8b5e8acfbb15ac4c69db04d50894fe72861b6b8/full/!1200,/0/default"
   },
   
 ];
@@ -151,12 +151,12 @@ const temples = [
   });
 
   largeLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.area > "90000"));
+    createTempleCard(temples.filter(temple => temple.area > 90000));
     document.querySelector(".title-filter").innerHTML = "Large";
   });
 
   smallLink.addEventListener("click", () => {
-    createTempleCard(temples.filter(temple => temple.area < "10000"));
+    createTempleCard(temples.filter(temple => temple.area < 10000));
     document.querySelector(".title-filter").innerHTML = "Small";
   });
 
