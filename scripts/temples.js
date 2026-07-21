@@ -179,9 +179,15 @@ const temples = [
       area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
       img.setAttribute("src", temple.imageUrl);
       img.setAttribute("alt", `${temple.templeName} Temple`);
-      img.setAttribute("loading", "lazy");
-      
-      card.appendChild(img);
+      img.setAttribute("width", "400");
+      img.setAttribute("height", "250");
+
+      // Eager loading for the very first card only
+      if (index === 0) {
+        img.setAttribute("loading", "eager");
+      } else {
+        img.setAttribute("loading", "lazy");
+      }
       card.appendChild(name);
       card.appendChild(location);
       card.appendChild(dedication);
