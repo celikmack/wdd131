@@ -163,7 +163,7 @@ const temples = [
   function createTempleCard(filteredTemples) {
     document.querySelector(".temple-grid").innerHTML = "";
 
-    filteredTemples.forEach(temple => {
+    filteredTemples.forEach((temple, index) => {
       let card = document.createElement("section");
       card.classList.add("card");
 
@@ -188,6 +188,8 @@ const temples = [
       } else {
         img.setAttribute("loading", "lazy");
       }
+
+      card.appendChild(img);
       card.appendChild(name);
       card.appendChild(location);
       card.appendChild(dedication);
