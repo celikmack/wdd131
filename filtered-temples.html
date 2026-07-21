@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <meta name="description" content="A beautiful collection of LDS temples around the world.">
+    <meta name="author" content="Celi Macêdo">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <nav class="nav-flex">
+            <ul id="navbar" class="navigation">
+                <li><a href="#" title="Home" class="nav-home">Home</a></li>
+                <li><a href="#" title="Old" class="nav-old">Old</a></li>
+                <li><a href="#" title="New" class="nav-new">New</a></li>
+                <li><a href="#" title="Large" class="nav-large">Large</a></li>
+                <li><a href="#" title="Small" class="nav-small">Small</a></li>
+            </ul>
+    </header>
+        
+    <main>
+        <section>   
+            <h2 class="title-filter">Home</h2>
+            <div class="temple-grid"></div> 
+        </section>       
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>© <span id="currentYear"></span>  🪸 Celi Macêdo 🪸 Brazil</p>
+        </div>
+        <div class="modified">
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
