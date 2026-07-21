@@ -79,12 +79,28 @@ const temples = [
     "https://www.churchofjesuschrist.org/imgs/001db7326e638032470a02813c9e47191ef74b0e/full/640%2C/0/default"
   },
   {
+    templeName: "Kirtland",
+    location: "Kirtland, Ohio, United States",
+    dedicated: "1836, March, 27",
+    area: 15000,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/kirtland-temple/kirtland-temple-1275-main.jpg"
+  },  
+  {
     templeName: "Sapporo Japan",
     location: "Sapporo, Japan",
     dedicated: "2016, August, 21",
     area: 48480,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/sapporo-japan-temple/sapporo-japan-temple-3374-main.jpg"
+  },
+  {
+    templeName: "Logan Utah",
+    location: "Logan, Utah, United States",
+    dedicated: "1884, May, 19",
+    area: 119619,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/logan-utah-temple/logan-utah-temple-40550-main.jpg"
   },
   {
     templeName: "Cobán Guatemala",
@@ -94,7 +110,14 @@ const temples = [
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/coban-guatemala-temple/coban-guatemala-temple-46348-main.jpg"
   },
-  
+  {
+    templeName: "St. George Utah",
+    location: "St. George, Utah, United States",
+    dedicated: "21887, April, 8",
+    area: 143969,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/st.-george-utah-temple/st.-george-utah-temple-40435-main.jpg"
+  },
   
 ];
 
