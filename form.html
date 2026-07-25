@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="A product evaluation form with submitting confirmation page.">
+    <meta name="author" content="Celi Macêdo">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get" class="wf1">
+            <fieldset>
+            <legend>Product</legend>    
+                <label>Product Name
+                    <select name="product" id="product" required>
+                        <option value="">Selecet a Product...</option>
+                    </select>
+                </label>
+
+                <label>Overall Rating*</label>
+                <div class="stars">
+                    <input type="radio" id="fivestar" name="stars" required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" required><label for="onestar"></label>
+                </div>
+
+                <label>Date of Installation<input type="date" name="date" id="date" required></label>
+                
+                
+                <label>Which features did you find useful in the product?
+                <p class="paragraph">(Check all that apply)</p>  
+                </label>
+                <label class="checkbox-label"><input type="checkbox" id="durability" name="features" value="yes">Durability</label>
+                <label class="checkbox-label"><input type="checkbox" id="ease of use" name="features" value="yes">Ease of Use</label>
+                <label class="checkbox-label"><input type="checkbox" id="performance" name="features" value="yes">Performance</label>
+                <label class="checkbox-label"><input type="checkbox" id="design" name="features" value="yes">Design</label>
+            </fieldset>
+            <fieldset>    
+            <legend>Your Review</legend>    
+                <label>Written Review <span class="optional">(Optional)</span><textarea id="review" name="review"></textarea></label>
+
+                <label>Your Name <span class="optional">(Optional)</span><input type="text" id="username" name="userName"></label>
+            </fieldset>        
+               
+            <input type="submit" value="Post Review">
+           
+        </form>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <p>© <span id="currentYear"></span>  🪸 Celi Macêdo 🪸 Brazil</p>
+        </div>
+        <div class="modified">
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>                               
