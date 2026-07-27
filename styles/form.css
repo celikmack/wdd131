@@ -137,19 +137,19 @@ label, input[type="submit"] {
     font-size: .9rem;
     font-style: italic;
 }
+.wf1 label.checkbox-label {
+    display: inline-block;
+    margin-top: 0;
+    padding: .2rem .5rem;
+}
 
 .wf1 input[type="checkbox"] {
-
-    margin-right: 6px;  
+    display: inline-block;
+    margin-left: .5rem;  
 }
 
 .wf1 input[type="checkbox"]:checked {
     accent-color: var(--primary-color);;
-}
-
-.wf1 .checkbox-label {
-    margin-top: 0;
-    padding: .2rem .5rem;
 }
 
 .optional {
