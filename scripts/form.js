@@ -41,14 +41,6 @@ const products = [
 
 function populateProduct() {
   const select = document.querySelector("#product");
-  select.innerHTML = ""
-  
-  const placeholder = document.createElement("option");
-  placeholder.value = "";
-  placeholder.textContent = "Select a Product...";
-  placeholder.disabled = true;
-  placeholder.selected = true;
-  select.appendChild(placeholder);
 
   products.forEach(product => {
     const option = document.createElement("option");
@@ -61,7 +53,7 @@ function populateProduct() {
 document.addEventListener("DOMContentLoaded", () => {
   const select = document.querySelector("#product");
   const message = document.querySelector("#counterMessage");
-  const form = document.querySelector("form");
+  
 
   if (select) {
     populateProduct();

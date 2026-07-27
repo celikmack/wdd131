@@ -14,6 +14,7 @@
 }
 
 body {
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     color: #333;
     
@@ -87,7 +88,7 @@ label, input[type="submit"] {
     font-size: 1rem;
     width: 100%;
     max-width: 400px;
-    margin: 6px 0;
+    margin-left: .5rem ;
 }
 
 .wf1 input[type="radio"] {
@@ -126,6 +127,17 @@ label, input[type="submit"] {
 	content: "\2605";
 }
 
+.features {
+    margin: 1.5rem 0 0 .5rem;
+    font-size: 1rem;
+}
+
+.paragraph {
+    margin:  0 0 .5rem .5rem;
+    font-size: .9rem;
+    font-style: italic;
+}
+
 .wf1 input[type="checkbox"] {
 
     margin-right: 6px;  
@@ -140,16 +152,11 @@ label, input[type="submit"] {
     padding: .2rem .5rem;
 }
 
-.paragraph {
-    margin-top: 5px;
-    margin-bottom: 10px;
-    font-style: italic;
-}
-
 .optional {
     color: #0000ff;
     font-size: .9rem;
 }
+
 .wf1 input[type="submit"] {
     display: block;
     border: none;

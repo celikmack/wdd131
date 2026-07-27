@@ -21,31 +21,31 @@
         <form action="review.html" method="get" class="wf1">
             <fieldset>
             <legend>Product</legend>    
-                <label>Product Name
+                <label for="product">Product Name</label>
                     <select name="product" id="product" required>
-                        <option value="">Selecet a Product...</option>
+                        <option value="" disabled selected>Select a Product...</option>
                     </select>
-                </label>
-
+                
                 <label>Overall Rating*</label>
                 <div class="stars">
-                    <input type="radio" id="fivestar" name="stars" required><label for="fivestar"></label>
-                    <input type="radio" id="fourstar" name="stars" required><label for="fourstar"></label>
-                    <input type="radio" id="threestar" name="stars" required><label for="threestar"></label>
-                    <input type="radio" id="twostar" name="stars" required><label for="twostar"></label>
-                    <input type="radio" id="onestar" name="stars" required><label for="onestar"></label>
+                    <input type="radio" id="fivestar" name="stars" value=5 required><label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value=4 required><label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value=3 required><label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value=2 required><label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value= 1required><label for="onestar"></label>
                 </div>
 
-                <label>Date of Installation<input type="date" name="date" id="date" required></label>
+                <label for="date">Date of Installation</label>
+                <input type="date" name="date" id="date" required>
                 
-                
-                <label>Which features did you find useful in the product?
-                <p class="paragraph">(Check all that apply)</p>  
-                </label>
+                <p class="features">Which features did you find useful in the product?</p>
+                <p class="paragraph">(Check all that apply)</p> 
+
                 <label class="checkbox-label"><input type="checkbox" id="durability" name="features" value="yes">Durability</label>
                 <label class="checkbox-label"><input type="checkbox" id="ease of use" name="features" value="yes">Ease of Use</label>
                 <label class="checkbox-label"><input type="checkbox" id="performance" name="features" value="yes">Performance</label>
                 <label class="checkbox-label"><input type="checkbox" id="design" name="features" value="yes">Design</label>
+                
             </fieldset>
             <fieldset>    
             <legend>Your Review</legend>    
