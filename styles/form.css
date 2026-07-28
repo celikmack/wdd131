@@ -55,10 +55,18 @@ label, input[type="submit"] {
     font-weight: 600;
 }
 
+.wf1 {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
 .wf1 fieldset {
     margin: 2rem 0;
     border: 1px solid #ddd;
     border-radius: var(--radius);
+    padding: 1.25rem;
+    width: 100%;
   }
 
 .wf1 legend {
@@ -87,8 +95,8 @@ label, input[type="submit"] {
     color: #555;
     font-size: 1rem;
     width: 100%;
-    max-width: 400px;
-    margin-left: .5rem ;
+    max-width: 100%;
+    margin: 0;
 }
 
 .wf1 input[type="radio"] {
@@ -165,10 +173,10 @@ label, input[type="submit"] {
     font-size: 1.5rem;
     border-radius: var(--radius);
     padding: .8rem;
-    width: 100%;
-    max-width: 400px;
-    margin: 2rem 2% 2rem 2%;
+    width: 90%;
+    margin: 2rem auto;
     box-shadow: 1px 1px 4px var(--fourth-color);
+    cursor: pointer;
 }
 
 .wf1 select:required, .wf1 input:required {
