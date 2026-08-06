@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bahia Aquática Activities - Explore our diving excursions, aquatic tours, and underwater adventures in Bahia.">
+    <meta name="author" content="Celi Macêdo"> 
+    <title>Activities - Bahia Aquática </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/activities.css">
+    <script src="scripts/global.js" defer></script>
+    <script src="scripts/activities.js" defer></script>
+</head>
+
+<body>
+
+    <picture>
+    <source media="(max-width: 649px)" srcset="images/diver-small.webp" type="image/webp">
+    <source media="(max-width: 979px)" srcset="images/diver-medium.webp" type="image/webp">
+    <img src="images/diver-bg.webp" class="body-bg-img" alt="Dive among yellow fish school">
+     </picture>
+
+    <header>
+        <div class="logo">
+            <img src="images/ba-logo.webp" alt="Bahia Aquática logo">
+        </div>
+
+        <!-- Switch language Portuguese/English -->
+        <div class="lang-switch">
+            <button onclick="switchLanguage('en')" title="English">
+                <img src="images/flag-uk.svg" alt="UK Flag" class="flag-icon"> EN
+            </button>
+            <button onclick="switchLanguage('pt')" title="Português">
+                <img src="images/flag-br.svg" alt="Brazil Flag" class="flag-icon"> PT
+            </button>
+        </div>
+        <div id="google_translate_element" style="display: none;"></div>
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <nav class="nav-flex">
+            <ul id="navbar" class="navigation">
+                <li><a href="index.html" title="Home" class="nav-home">Home</a></li>
+                <li><a href="activities.html" title="Activities" class="nav-activities active">Activities</a></li>
+                <li><a href="gallery.html" title="Gallery" class="nav-gallery">Gallery</a></li>
+                <li><a href="contact.html" title="Contact Us" class="nav-contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="text-home">
+                <h1>Diving & Excursions</h1>
+                <p>Discover world-class shipwrecks, pristine coral reefs, and open-ocean adventures across Bahia.</p>
+            </div>
+            <div id="filter-buttons" class="filter-bar">
+                <button class="filter-btn active" data-category="all">All Activities</button>
+                <button class="filter-btn" data-category="scuba">Scuba Diving</button>
+                <button class="filter-btn" data-category="shipwreck">Wreck Diving</button>
+                <button class="filter-btn" data-category="reef">Coral Reefs</button>
+                <button class="filter-btn" data-category="whales">Whale Watching</button>
+                <button class="filter-btn" data-category="course">Courses</button>
+            </div>                                
+        </div>
+    </section>    
+
+    <main class="activities-container">
+        <!-- Dynamic Grid loaded safely via JavaScript -->
+        <section id="activities-grid" class="activities-grid"></section>
+    </main>
+
+
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank" aria-label="Twitter-X"><img src="images/twitter-x.svg" alt="Twitter-X" width="16" height="16"></a>
+        </div>
+        <p>© 2026 - Bahia Aquática</p>
+    </footer>
+
+</body>
+</html>

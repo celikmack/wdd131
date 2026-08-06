@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bahia Aquática Homepage - A diving operator presenting an amazing underwater Bahia.">
+    <meta name="author" content="Celi Macêdo"> 
+    <title>Home - Bahia Aquática</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/index.css">
+
+    <script src="scripts/global.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <picture>
+        <source media="(max-width: 649px)" srcset="images/hero-small.webp">
+        <source media="(max-width: 979px)" srcset="images/hero-medium.webp">
+        <img src="images/hero-bg.webp" class="body-bg-img" alt="Manta stingray in the deep ocean">
+    </picture>
+
+    <!-- NAVBAR HEADER -->
+    <header>
+        <div class="logo">
+            <img src="images/ba-logo.webp" alt="Bahia Aquática logo">
+        </div>
+
+        <!-- Switch language Portuguese/English -->
+        <div class="lang-switch">
+            <button onclick="switchLanguage('en')" title="English">
+                <img src="images/flag-uk.svg" alt="UK Flag" class="flag-icon"> EN
+            </button>
+            <button onclick="switchLanguage('pt')" title="Português">
+                <img src="images/flag-br.svg" alt="Brazil Flag" class="flag-icon"> PT
+            </button>
+        </div>
+        <div id="google_translate_element" style="display: none;"></div>
+
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <nav class="nav-flex">
+            <ul id="navbar" class="navigation">
+                <li><a href="index.html" title="Home" class="nav-home active">Home</a></li>
+                <li><a href="activities.html" title="Activities" class="nav-activities">Activities</a></li>
+                <li><a href="gallery.html" title="Gallery" class="nav-gallery">Gallery</a></li>
+                <li><a href="contact.html" title="Contact Us" class="nav-contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="hero-overlay">
+            <div class="text-home">
+                <h1>Meet Bahia underwater!</h1>
+                <p>Bahia Aquática will take you to an amazing side of Bahia!</p>
+            </div>
+            <div class="hero-button">
+                <a href="activities.html" class="btn">Book Now!</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="parent">
+            <div class="block1">
+                <!-- Scuba Diving Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/diver.svg" alt="Scuba diving icon" loading="lazy">
+                        <h2>Scuba Diving</h2>
+                    </div>
+                    <div class="bckg">
+                        <img src="images/dive-card.jpg" alt="Divers exploring open ocean drop-offs" loading="lazy">
+                        <div class="card-body">
+                            <p>Explore deep ocean waters and open-sea drop-offs tailored for experienced, certified divers seeking technical adventures.</p>
+                            <button type="button" class="card-btn" data-activity="scuba-diving">Dive today!</button>
+                        </div>
+                    </div>
+                </div>    
+
+                <!-- Wreck Diving Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/shipwreck.webp" alt="Shipwreck icon" loading="lazy">
+                        <h2>Wreck Diving</h2>
+                    </div>
+                    <div class="bckg">
+                        <img src="images/wreck-rosalina.webp" alt="Turtle laying on coral reef next the historic Rosalina shipwreck." loading="lazy">
+                        <div class="card-body">
+                            <p>Explore centuries-old shipwreck rich in history and teeming with vibrant marine life.</p>
+                            <button type="button" class="card-btn" data-activity="wreck-diving">Explore today!</button>
+                        </div>
+                    </div>
+                </div>    
+
+                <!-- Why Choose Us Card -->
+                <div class="card">
+                    <div class="history">
+                        <div class="logo-wrapper">
+                            <img src="images/ba-logo.webp" alt="Bahia Aquática logo" class="watermark-logo" loading="lazy">
+                        </div>
+                        <div class="history-content">
+                            <h2>Why Choose Us?</h2>
+                            <p>We make exploring the ocean simple, safe, and unforgettable. Whether you are stepping into the water for the first time or taking on challenging deep-sea drop-offs, our PADI-certified team provides top-tier gear, small group sizes, and local marine expertise every step of the way. Your adventure, your safety, and our reefs are always our top priorities.</p>
+                        </div> 
+                    </div>        
+                </div>     
+            </div>
+        
+            <div class="block2">
+                <!-- Call to Action Card -->
+                <div class="card">
+                    <div class="cta">
+                        <div class="cta-paragraph">
+                            <img src="images/megaphone-fill.svg" alt="Megaphone icon" class="cta-icon" loading="lazy">
+                        </div>
+                        <div class="cta-body">
+                            <div class="cta-content">
+                                <p>Your underwater journey starts here! Get in touch with our certified team to customize your dive and explore our waters with total confidence.</p>
+                            </div>
+                            <div class="cta-button-container">
+                                <a href="contact.html" class="cta-button">Contact us now!</a>
+                            </div> 
+                        </div>       
+                    </div> 
+                </div>    
+                
+                <!-- Coral Reef Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/coral.svg" alt="Coral reef icon" loading="lazy">
+                        <h2>Coral Reef</h2>
+                    </div>
+                    <div class="bckg">
+                        <img src="images/mahfuz77-aquarium.webp" alt="Shallow coral reef ecosystem with tropical fish" loading="lazy">
+                        <div class="card-body">
+                            <p>Discover protected coral ecosystems filled with exotic tropical fish and marine fauna. Tailored for beginners!</p>
+                            <button type="button" class="card-btn" data-activity="coral-reef">Discover today!</button>
+                        </div>
+                    </div>
+                </div>    
+
+                <!-- Whale Watching Card -->
+                <div class="card">
+                    <div class="card-header">
+                        <img src="images/whale-tail.svg" alt="Whale tail fin icon" loading="lazy">
+                        <h2>Whale Watching</h2>
+                    </div>
+                    <div class="bckg">
+                        <img src="images/whale.webp" alt="Humpback whale jumping ou tof the water in Salvador beach." loading="lazy">
+                        <div class="card-body">
+                            <p>Witness majestic humpback whales on their annual migration along the Bahian coastline.</p>
+                            <button type="button" class="card-btn" data-activity="whale-watching">Witness today!</button>
+                        </div>
+                    </div>
+                </div>  
+            </div>  
+        </section>
+
+        <!-- Certifications & Newsletter -->
+        <section class="cert-section">
+            <div class="cert-grid">
+                
+                <!-- SDI Card -->
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <img src="images/sdi-logo.png" alt="SDI Scuba Diving International logo" loading="lazy">
+                    </div>
+                    <div class="badge blue">
+                        <span>Scuba Divers Trained Here</span>
+                    </div>
+                </div>
+
+                <!-- TDI Card -->
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <img src="images/tdi-logo.webp" alt="TDI Technical Diving International logo" loading="lazy">
+                    </div>
+                    <div class="badge navy">
+                        <span>Tech Divers Trained Here</span>
+                    </div>
+                </div>
+
+                <!-- PADI Card -->
+                <div class="cert-card">
+                    <div class="cert-logo">
+                        <img src="images/padi-logo.webp" alt="PADI Diving Course International logo" loading="lazy">
+                    </div>
+                    <div class="badge red">
+                        <span>PADI Courses Available</span>
+                    </div>
+                </div>
+
+                <!-- Newsletter Form -->
+                <form id="newsletter-form" class="cert-card form-card">
+                    <fieldset>
+                        <legend class="type1">SIGN UP NOW!</legend>
+                        <p class="form-desc">Get the latest dive conditions and whale migration updates directly in your inbox.</p>
+                        
+                        <div class="form-item">
+                            <label for="fullname">Full Name:</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Your name" required>
+                        </div>
+
+                        <div class="form-item">
+                            <label for="usermail">E-mail:</label>
+                            <input type="email" id="usermail" name="usermail" placeholder="youremail@example.com" required>
+                        </div>
+
+                        <button type="submit" class="form-btn">Get the news!</button>
+                    </fieldset>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank" aria-label="Twitter-X"><img src="images/twitter-x.svg" alt="Twitter-X" width="16" height="16"></a>
+        </div>
+        <p>© 2026 - Bahia Aquática</p>
+        <p class="visit-counter">Page Visits: <span id="visits">0</span></p>
+    </footer>
+</body>
+</html>

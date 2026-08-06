@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bahia Aquática Contact Us Pge - Get in touch or book your next dive in Bahia.">
+    <meta name="author" content="Celi Macêdo"> 
+    <title>Contact Us - Bahia Aquática</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/global.js" defer></script>
+</head>
+
+<body class="contact-bg">
+
+    <picture>
+    <source media="(max-width: 649px)" srcset="images/sunray-small.webp">
+    <source media="(max-width: 979px)" srcset="images/sunray-medium.webp">
+    <img src="images/sunray.webp" class="body-bg-img" alt="Sunlight filtering through clear blue water underwater in Bahia">
+     </picture>
+
+    <header>
+        <div class="logo">
+            <img src="images/ba-logo.webp" alt="Bahia Aquática logo">
+        </div>
+
+        <!-- Switch language Portuguese/English -->
+        <div class="lang-switch">
+            <button onclick="switchLanguage('en')" title="English">
+                <img src="images/flag-uk.svg" alt="UK Flag" class="flag-icon"> EN
+            </button>
+            <button onclick="switchLanguage('pt')" title="Português">
+                <img src="images/flag-br.svg" alt="Brazil Flag" class="flag-icon"> PT
+            </button>
+        </div>
+        <div id="google_translate_element" style="display: none;"></div>
+        
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu"></button>
+        <nav class="nav-flex">
+            <ul id="navbar" class="navigation">
+                <li><a href="index.html" title="Home" class="nav-home">Home</a></li>
+                <li><a href="activities.html" title="Activities" class="nav-activities">Activities</a></li>
+                <li><a href="gallery.html" title="Gallery" class="nav-gallery">Gallery</a></li>
+                <li><a href="contact.html" title="Contact Us" class="nav-contact active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="contact-section">
+            <div class="container">
+                
+                <!-- Contact Info Card -->
+                <div class="contactInfo">
+                    <div>
+                        <h2>Contact Info</h2>
+                        <ul class="info">
+                            <li>
+                                <span><img src="images/home.svg" alt="Location icon"></span>
+                                <span>Bahia de Todos os Santos<br>Salvador/BA<br>40000-000</span>
+                            </li>
+                            <li>
+                                <span><img src="images/email.svg" alt="Email icon"></span>
+                                <span>bahiaquatica@gmail.com</span>
+                            </li>
+                            <li>
+                                <span><img src="images/phone.svg" alt="Phone icon"></span>
+                                <span> +55 71 4321-8765</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Map Link Button -->
+                    <div class="map-box">
+                        <a href="https://maps.app.goo.gl/m1hYRFbXmiNeK2JC8" target="_blank" rel="noopener" class="map-btn">
+                            <img src="images/location.svg" alt="Location pin" class="map-icon"> 
+                             View map
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contactForm">
+                    <form action="#" method="POST">
+                        
+                        <div class="form-section">
+                            <h3>1. Your Enquiry</h3>
+                            <div class="formBox">
+                                <div class="inputBox w100">
+                                    <select name="interest" required class="select-input">
+                                        <option value="" disabled selected>Select your dive interest...</option>
+                                        <option value="guided-dive">Guided Dives / Fun Dives</option>
+                                        <option value="whale-watching">Whale Watching Excursions</option>
+                                        <option value="equipment">Equipment Rental</option>
+                                        <option value="general">General Question</option>
+                                    </select>
+                                </div>
+                                <div class="inputBox w100">
+                                    <textarea name="message" required placeholder="What would you like to ask or tell us?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3>2. Your Contact Details</h3>
+                            <div class="formBox">
+                                <div class="inputBox w50">
+                                    <input type="text" name="firstname" required>
+                                    <span>First Name *</span>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="text" name="lastname" required>
+                                    <span>Last Name *</span>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="email" name="email" required>
+                                    <span>Email Address *</span>
+                                </div>
+                                <div class="inputBox w50">
+                                    <input type="tel" name="phone" required>
+                                    <span>Mobile Number *</span>
+                                </div>
+                                <div class="inputBox w100 btn-wrapper">
+                                    <input type="submit" value="Send Message">
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                </div> 
+
+            </div>    
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://facebook.com/" target="_blank" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://instagram.com/" target="_blank" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank" aria-label="Twitter-X"><img src="images/twitter-x.svg" alt="Twitter-X" width="16" height="16"></a>
+        </div>
+        <p>© 2026 - Bahia Aquática</p>
+    </footer>
+
+</body>
+</html>

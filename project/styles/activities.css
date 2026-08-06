@@ -1,0 +1,359 @@
+/* ACTIVITIES PAGE SPECIFIC STYLE*/
+:root {
+    /* Backgrounds */
+    --bg-card: linear-gradient(135deg, rgba(14, 55, 105, 0.92) 0%, rgba(10, 40, 80, 0.88) 100%);
+    --bg-overlay: rgba(26, 37, 47, 0.75);
+    --bg-dropdown: rgba(26, 37, 47, 0.4);
+    
+    /* Borders */
+    --border-glass: 1px solid rgba(255, 255, 255, 0.18);
+    --border-cyan: 1px solid rgba(77, 234, 218, 0.3);
+    --border-subtle: 1px solid rgba(255, 255, 255, 0.08);
+    
+    /* Shadows */
+    --shadow-card: 0 12px 40px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 16px 48px rgba(77, 234, 218, 0.15);
+}
+
+header {
+    z-index: 10;
+}
+
+.activities-container {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 2rem 1rem 0;
+}
+
+.hero-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+}
+
+.text-home {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+    margin-bottom: 0.5rem;
+}
+
+.text-home h1 {
+    display: inline-block;
+    font-family: var(--header-family);
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--text-light);
+    background-color: var(--bg-overlay);
+    padding: 0.4rem 1.2rem;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.text-home p {
+    display: inline-block;
+    font-family: var(--body-family);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--text-light);
+    background-color: var(--bg-overlay);
+    padding: 0.4rem 1.2rem;
+    border-radius: 8px;
+    margin: 0;
+}
+
+/* Filter Pills */
+.filter-bar {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 2;
+}
+
+.filter-btn {
+    background: rgba(14, 55, 105, 0.75);
+    border: var(--border-glass);
+    color: var(--text-light);
+    padding: 0.6rem 1.3rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-family: var(--header-family);
+    font-size: 0.88rem;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: var(--text-light);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: var(--btn-gradient);
+    border-color: var(--accent-coral);
+    color: var(--text-light);
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(192, 57, 43, 0.4);
+}
+
+/* Glassmorphism Card */
+.activity-card {
+    background: var(--bg-card);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: var(--border-cyan);
+    border-radius: 20px;
+    padding: 2.25rem;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow-card);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.activity-card:hover {
+    border-color: rgba(77, 234, 218, 0.6);
+    box-shadow: var(--shadow-glow);
+}
+
+.activity-card .card-content {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+.card-text {
+    flex: 1;
+}
+
+.card-text h2 {
+    font-family: var(--header-family);
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: var(--accent-teal);
+    margin-top: 0;
+    margin-bottom: 0.85rem;
+    letter-spacing: -0.5px;
+}
+
+.card-text p {
+    font-family: var(--body-family);
+    font-size: 0.98rem;
+    line-height: 1.65;
+    color: var(--text-light);
+    opacity: 0.88;
+    margin-bottom: 1.5rem;
+}
+
+/* Overview & Logistics Tables */
+.specs-table-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1.5rem 0;
+    padding-top: 1.25rem;
+    border-top: var(--border-subtle);
+}
+
+.spec-column h3 {
+    font-family: var(--header-family);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-teal);
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.spec-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: var(--border-subtle);
+    font-family: var(--body-family);
+    font-size: 0.92rem;
+}
+
+.spec-row .spec-label {
+    color: var(--text-light);
+    opacity: 0.65;
+}
+
+.spec-row .spec-value {
+    color: var(--text-light);
+    font-weight: 700;
+}
+
+/* Accordion / Spots Dropdown */
+.spots-dropdown {
+    background: var(--bg-dropdown);
+    border: var(--border-glass);
+    border-radius: 12px;
+    padding: 0.75rem 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.spots-dropdown summary {
+    cursor: pointer;
+    color: var(--accent-teal);
+    font-family: var(--header-family);
+    font-weight: 600;
+    font-size: 0.9rem;
+    outline: none;
+    user-select: none;
+    transition: color 0.2s ease;
+}
+
+.spots-dropdown summary:hover {
+    color: var(--accent-coral);
+}
+
+.spots-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-family: var(--body-family);
+}
+
+.spots-table th {
+    text-align: left;
+    font-family: var(--header-family);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--accent-teal);
+    padding-bottom: 0.6rem;
+    border-bottom: var(--border-subtle);
+}
+
+.spots-table td {
+    padding: 0.65rem 0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    opacity: 0.9;
+    border-bottom: var(--border-subtle);
+}
+
+.spots-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Image Container */
+.card-image {
+    width: 300px;
+    height: 240px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    overflow: hidden;
+    border: var(--border-glass);
+    background: rgba(14, 55, 105, 0.6);
+    box-shadow: var(--shadow-card);
+    position: relative;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.activity-card:hover .card-image img {
+    transform: scale(1.05);
+}
+
+/* Breakpoints */
+
+/* TABLET  */
+@media (max-width: 768px) {
+    .activities-container {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .hero-section {
+        padding: 1rem 0.75rem 0;
+    }
+
+    .text-home h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-home p {
+        font-size: 1rem;
+    }
+
+    .activity-card {
+        padding: 1.5rem;
+        border-radius: 16px;
+    }
+
+    .activity-card .card-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 200px;
+    }
+
+    .card-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .specs-table-container {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 380px) {
+    .activities-container {
+        padding: 1rem 0.5rem;
+    }
+
+    .text-home h1 {
+        font-size: 1.5rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .text-home p {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.8rem;
+    }
+
+    .activity-card {
+        padding: 1.1rem;
+        border-radius: 12px;
+    }
+
+    .card-text h2 {
+        font-size: 1.3rem;
+    }
+
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.82rem;
+    }
+}

@@ -1,0 +1,232 @@
+/* GALLERY PAGE SPECIFIC STYLE */
+:root {
+    /* Backgrounds */
+    --bg-overlay: rgba(6, 20, 35, 0.4);
+    --bg-card-footer: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(4, 18, 30, 0.92) 100%);
+    --bg-badge: rgba(2, 12, 22, 0.75);
+
+    /* Borders */
+    --border-glass: 1px solid rgba(255, 255, 255, 0.18);
+
+    /* Shadows */
+    --shadow-box: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    margin: 0 auto;
+    font-family: var(--body-family);
+    color: var(--text-light);
+    background-color: var(--bg-dark);
+}
+
+/* Gallery Navigation & Filter Header */
+.title-filter,
+h1.title-filter {
+    text-align: center;
+    font-family: var(--header-family);
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin: 2.5rem auto 1.2rem;
+    background-color: var(--bg-overlay);
+    padding: 0.6rem 1.5rem;
+    border-radius: 12px;
+    width: max-content;
+    max-width: 90%;
+    box-shadow: var(--shadow-box);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    letter-spacing: 0.5px;
+}
+
+.filter-nav {
+    margin: 1.5rem auto 2.5rem;
+    padding: 0.75rem 1rem;
+    background-color: var(--bg-overlay);
+    border-radius: 12px;
+    max-width: 900px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.filter-menu {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 0.8rem;
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+.filter-menu button {
+    background-color: var(--accent-teal); 
+    color: var(--text-dark);
+    border: none;
+    padding: 0.65rem 1.5rem;
+    font-family: var(--header-family);
+    font-size: 0.95rem;
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer; 
+    transition: all 0.2s ease;
+}
+
+.filter-menu button:hover {
+    background-color: var(--accent-teal-hover);
+    transform: translateY(-2px);
+}
+
+.filter-menu button.active {
+    background: var(--btn-gradient);
+    color: var(--text-light);
+    border-color: var(--accent-coral);
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(192, 57, 43, 0.5);
+    text-shadow: none;
+}
+
+.filter-menu button.active:hover {
+    background-color: var(--accent-coral-hover);
+    border-color: var(--accent-coral-hover);
+    box-shadow: 0 4px 18px rgba(232, 90, 68, 0.65);
+}
+
+/* Cards & Grid Layout */
+.dive-grid {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+    padding: 0 1rem 3rem 1rem; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.card, 
+.gallery-card {
+    position: relative;
+    height: 290px;
+    background: var(--bg-dark);
+    border-radius: 10px;
+    border-left: 4px solid var(--accent-teal);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+.card:hover, 
+.gallery-card:hover {
+    transform: translateY(-6px) scale(1.015);
+    border-left-color: var(--accent-coral);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 22px rgba(192, 57, 43, 0.35);
+}
+
+.card img, 
+.gallery-card img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.card:hover img, 
+.gallery-card:hover img {
+    transform: scale(1.06);
+}
+
+.card p:nth-of-type(1),
+.gallery-card p:nth-of-type(1) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 35px 14px 38px 14px;
+    background: var(--bg-card-footer);
+    color: var(--text-light);
+    font-family: var(--body-family);
+    font-size: 0.92rem;
+    z-index: 2;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+    pointer-events: none;
+}
+
+.card .label,
+.gallery-card .label { 
+    color: var(--accent-teal);
+    font-family: var(--header-family);
+    font-weight: 600; 
+    margin-right: 6px;
+}
+
+.card p:nth-of-type(2),
+.gallery-card p:nth-of-type(2) {
+    position: absolute;
+    bottom: 10px;
+    left: 14px;
+    right: 14px;
+    margin: 0;
+    z-index: 3;
+    font-family: var(--body-family);
+    font-size: 0.76rem;
+    color: var(--text-subtle);
+    background: var(--bg-badge);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 3px 10px;
+    border-radius: 4px;
+    border-left: 2px solid var(--accent-teal);
+    font-style: italic;
+    width: fit-content;
+    pointer-events: none;
+}
+
+/* Breakpoints */
+/* TABLET */
+
+@media screen and (min-width: 768px) { 
+    .dive-grid { 
+        grid-template-columns: repeat(2, 1fr); 
+    } 
+}
+
+/* DESKTOP */
+@media screen and (min-width: 980px) { 
+    .dive-grid { 
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem; 
+    } 
+
+    .card, 
+    .gallery-card { 
+        height: 300px; 
+    }
+}
+
+/* MOBILE */
+@media screen and (max-width: 380px) {
+    .title-filter,
+    h1.title-filter {
+        font-size: 1.6rem;
+        padding: 0.4rem 1rem;
+        margin: 1.5rem auto 1rem;
+    }
+
+    .filter-nav {
+        padding: 0.5rem;
+        margin: 1rem auto 1.5rem;
+    }
+
+    .filter-menu button {
+        padding: 0.5rem 1rem;
+        font-size: 0.82rem;
+    }
+
+    .card, 
+    .gallery-card {
+        height: 260px;
+    }
+}
