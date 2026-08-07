@@ -6,8 +6,8 @@
 
 :root {
   --primary-blue: #0e3769;
-  --accent-lime: #adff2f;
-  --accent-coral: #ff7f50;
+  --accent-lime: #4deada;
+  --accent-coral: #c0392b;
   --bg-color: #f4f7f8;
   --card-bg: #ffffff;
   --text-dark: #333333;
@@ -102,6 +102,12 @@ body {
   padding: 0.6rem 0.8rem;
   background-color: #f9f9f9;
   border-left: 4px solid var(--accent-coral);
+}
+
+.domain-info {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--primary-blue);
 }
 
 /* Scenarios List */
